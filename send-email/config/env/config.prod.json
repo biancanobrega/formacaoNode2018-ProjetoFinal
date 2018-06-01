@@ -1,0 +1,16 @@
+{
+  "server": {
+    "port": 9000,
+    "service": {
+      "email": {
+        "host": "EmailHost",
+        "port": 0,
+        "secure": true,
+        "auth": {
+          "user": "user",
+          "pass": "pass"
+        }
+      }
+    }
+  }
+}
