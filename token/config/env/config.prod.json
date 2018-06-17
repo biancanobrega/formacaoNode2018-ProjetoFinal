@@ -1,0 +1,18 @@
+{
+  "server": {
+    "port": 9000,
+    "database": {
+      "connectionString": "mongodb://localhost:27017/example"
+    },
+    "components": {
+      "userTokenManager": {
+        "hashDigest":"sha512",
+        "hashLength":64,
+        "defaultLifetime": 720,
+        "createAccountLifetime": 4,
+        "changePasswordLifetime": 1,
+        "tokenKey":"tokengeneratekey123"
+      }
+    }
+  }
+}

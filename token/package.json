@@ -1,0 +1,43 @@
+{
+  "name": "tokenator",
+  "version": "1.0.0",
+  "description": "Rest service for authentication token generation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "",
+    "cp-config": "mkdir -p build/config/env && cp config/env/config.dev.json build/config/env",
+    "build": "tsc && npm run cp-config && npm start",
+    "start": "node build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BiaNobrega/formacaoNode2018-ProjetoFinalgit"
+  },
+  "author": "Bianca Nóbrega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BiaNobrega/formacaoNode2018-ProjetoFinal/issues"
+  },
+  "homepage": "https://github.com/BiaNobrega/formacaoNode2018-ProjetoFinal#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "http-status": "^1.0.1",
+    "joi": "^13.1.2",
+    "jsonwebtoken": "^8.2.2",
+    "mongoose": "^5.0.13",
+    "nconf": "^0.10.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/http-status": "^0.2.30",
+    "@types/joi": "^13.0.7",
+    "@types/jsonwebtoken": "^7.2.7",
+    "@types/mongoose": "^5.0.8",
+    "@types/nconf": "0.0.37",
+    "@types/redis": "^2.8.6",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
